@@ -15,3 +15,11 @@
 
 
 #github tips
+
+- git status
+- git add _______
+
+to upload to github:
+
+- git commit -am "some message"
+- git push origin master
