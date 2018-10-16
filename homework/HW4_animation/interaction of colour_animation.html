@@ -1,0 +1,139 @@
+<html>
+<head>
+	<title></title>
+<style>
+html{background-color: f6f6f6;
+}
+html,body{
+	margin:0;
+	height:100%;
+	display:flex;
+	align-items: center;
+	justify-content: center;
+}
+
+@keyframes twirl{
+	50%{
+		transform: rotate(30deg);
+	}
+	100%{
+		transform: initial;
+	}
+}
+
+@keyframes stomp{
+	15%{transform: rotate(20deg);}
+	50%{ transform: translate(0, 80px);
+	rotate:(20deg) ;}
+	60%%{transform: rotate(90deg);}
+	100%{ transform: initial; }
+}
+
+#square{
+	animation: twirl 3s infinite;
+	background-color: 0d0e46;
+	width:50vmin;
+	height:10vmin;
+}
+#square2{
+	animation: twirl 5s infinite;
+	background-color: lightblue;
+	animation: transform 10s infinite;
+	width:50vmin;
+	height:10vmin;
+	opacity:0.5;}
+
+#square3{
+	animation: twirl 8s infinite;
+	background-color: 096ab8;
+	width:50vmin;
+	height:10vmin;
+	opacity:0.6;}
+
+
+#outer{
+	animation: stomp 2.5s infinite;
+}
+
+
+
+
+@keyframes change{
+	50%{
+		transform: translate(0,-803px);
+		transform: rotate(130deg); 
+	}
+	60%%{transform: rotate(90deg);}
+	100%{
+		transform: initial;
+	}
+}
+
+}
+#square4{
+	animation: change 6s infinite;
+	background-color: black;
+	width:50vmin;
+	height:10vmin;
+	opacity:0.4;
+}
+
+
+#square6{
+	animation: change 9s infinite;
+	background-color: 096ab8;
+	width:50vmin;
+	height:10vmin;
+    opacity:0.9;}
+
+#square5{
+	animation: change 3.5s infinite;
+	background-color: black;
+	width:50vmin;
+	height:10vmin;
+	opacity:0.8;}
+
+#square7{
+	animation: change 8s infinite;
+	background-color: darkgrey;
+	width:50vmin;
+	height:10vmin;
+    opacity:0.8;}
+
+#square8{
+	animation: twirl 11s infinite;
+	background-color: lightblue;
+	width:50vmin;
+	height:10vmin;
+	opacity:0.8;}
+
+
+
+
+
+
+
+</style>
+</head>
+<body>
+
+
+<div id="outer">
+	<div id="square"></div>
+	<div id="square2"></div>
+	<div id="square3"></div>
+	<div id="square4"></div>
+	<div id="square5"></div>
+	<div id="square6"></div>
+	<div id="square8"></div>
+	<div id="square7"></div>
+
+</div>
+<p> <b>Interaction of Colour</b>
+	<br>Josef Albers
+</p>
+
+
+
+</body>
+</html> 
