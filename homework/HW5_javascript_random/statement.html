@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+	<title>
+	</title>
+
+	<style>
+	
+html,body{
+	font-size:10pt;
+	display:flex;
+	justify-content:center;
+	align-items:center;
+	height:100%;
+	background-color:lightgrey;
+	font-family:Times;
+	}
+
+h1{font-size:12pt;
+		color:darkred;
+		font-family:Heltetica;
+		display:flex;
+		justify-content:center;
+	}
+
+	</style>
+
+
+</head>
+
+
+
+<body>
+	<p>
+		Man is least himself when he talks in his own person.
+		Give him a(n)
+		<h1 id= "spot"></h1>
+		and he will tell you the truth.
+	</p>
+
+</body>
+
+
+
+<script>
+	var choices = [
+    "abstract expressionism",
+    "academic",
+    "action painting",
+    "aestheticism",
+    "art deco",
+    "art nouveau",
+    "avant-garde",
+    "barbizon school",
+    "baroque",
+    "bauhaus",
+    "biedermeier",
+    "caravaggisti",
+    "carolingian",
+    "classicism",
+    "cloisonnism",
+    "cobra",
+    "color field painting",
+    "conceptual art",
+    "cubism",
+    "cubo-futurism",
+    "dada",
+    "dadaism",
+    "de stijl",
+    "deformalism",
+    "der blaue reiter",
+    "die brücke",
+    "divisionism",
+    "eclecticism",
+    "ego-futurism",
+    "existentialism",
+    "expressionism",
+    "fauvism",
+    "fluxus",
+    "formalism",
+    "futurism",
+    "geometric abstraction",
+    "gothic art",
+    "gründerzeit",
+    "hard-edge painting",
+    "historicism",
+    "hudson river school",
+    "humanism",
+    "hyperrealism",
+    "idealism",
+    "illusionism",
+    "immagine&poesia",
+    "impressionism",
+    "incoherents",
+    "installation art",
+    "international gothic",
+    "intervention art",
+    "jugendstil",
+    "kinetic art",
+    "land art",
+    "les nabis",
+    "lettrism",
+    "lowbrow",
+    "luminism",
+    "lyrical abstraction",
+    "mail art",
+    "manierism",
+    "mannerism",
+    "maximalism",
+    "merovingian",
+    "metaphysical art ",
+    "minimalism",
+    "modern art",
+    "modernism",
+    "monumentalism",
+    "multiculturalism",
+    "naturalism",
+    "neo-classicism",
+    "neo-dada",
+    "neo-expressionism",
+    "neo-fauvism",
+    "neo-geo",
+    "neo-impressionism",
+    "neo-minimalism",
+    "neoclassicism",
+    "neoism",
+    "neue slowenische kunst",
+    "new media art",
+    "new objectivity",
+    "nonconformism",
+    "nouveau realisme",
+    "op art",
+    "orphism",
+    "ottonian",
+    "outsider art",
+    "performance art",
+    "perspectivism",
+    "photorealism",
+    "pointilism",
+    "pop art",
+    "post-conceptualism",
+    "post-impressionism",
+    "post-minimalism",
+    "post-painterly abstraction",
+    "post-structuralism",
+    "postminimalism",
+    "postmodern art",
+    "postmodernism",
+    "pre-raphaelites",
+    "precisionism",
+    "primitivism",
+    "purism",
+    "rayonism",
+    "realism",
+    "relational art",
+    "remodernism",
+    "renaissance",
+    "rococo",
+    "romanesque",
+    "romanticism",
+    "russian futurism",
+    "russian symbolism",
+    "scuola romana",
+    "secularism",
+    "situationist international",
+    "social realism",
+    "socialist realism",
+    "sound art",
+    "street art",
+    "structuralism",
+    "stuckism international",
+    "stuckism",
+    "superflat",
+    "superstroke",
+    "suprematism",
+    "surrealism",
+    "symbolism",
+    "synchromism",
+    "synthetism",
+    "systems art",
+    "tachism",
+    "tachisme",
+    "tonalism",
+    "video art",
+    "video game art",
+    "vorticism",
+    "young british artists"
+  ];
+	var number = Math.random()*140;
+
+	console.log(number);
+
+	var integer=parseInt(number);
+	console.log(integer);
+
+	console.log(choices[integer]);
+
+	document.getElementById("spot").innerHTML = choices[integer];
+	
+
+
+	</script>
+
+
+</html>
