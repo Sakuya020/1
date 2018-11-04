@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+</head>
+
+<body>
+        <script>
+        var crr=1;
+        function changePic(){
+            var imgObj=document.getElementById("myPic");
+            imgObj.src=crr+".gif";
+ 
+        }
+        window.onload=function(){
+            document.getElementById("previousBut").addEventListener("click",function(){
+                if(crr>1){
+                    crr--;
+                }
+                changePic();
+ 
+            },false);
+            document.getElementById("nextBut").addEventListener("click",function(){
+                if(crr<4){
+                    crr++;
+                }
+                changePic();
+            },false);
+        }
+    </script>
+    
+     <div id="showPic">
+         <img src="1.gif" id="myPic" style="width:820px">
+         </div>
+     <div id="ctrlPic">
+         <button id="previousBut">previous</button>
+         <button id="nextBut">next</button>
+         </div>
+</body>
+</html>
+
