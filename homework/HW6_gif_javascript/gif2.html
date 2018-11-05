@@ -5,16 +5,34 @@
 		
 	</title>
 	<style>
-		div{position:absolute;}
+	img{display:flex;
+	justify-content:center;
+	align-items:center;
+	height:100%;
+	width:100%;}
 	</style>
 </head>
 <body>
 
+<img id="pic"></img>
+
+
 
 <script>
 
+document.getElementById("pic").src="4.gif";
+
+
+
+
 var channels = ["1.gif", "2.gif", "3.gif", "4.gif"];
 	console.log(channels);
+
+
+function ChannelsZero () {"1.gif"};
+function ChannelsOne () {"2.gif"};
+function ChannelsTwo () {"3.gif"};
+function ChannelsThree () {"4.gif"};
 
 function draw () 
 
@@ -29,10 +47,8 @@ function draw ()
 function keyPressed() 
 
 {
-	var img=document.getElementById("changepic");
- 
-	if(keyCode==UP){
-		if (channels==0){ChannelsOnw("2.gif");}
+	if(keyCode==UP){console.log("hi");
+		if (channels==0){ChannelsOne("2.gif");}
 		else if (channels==1){ChannelsTwo("3.gif");}
 		else if (channels==2){ChannelsThree("4.gif");}
 		else if (channels==3){ChannelsZero("1.gif");}}
@@ -42,20 +58,20 @@ function keyPressed()
 		else if (channels==1){ChannelsZero("1.gif");}
 		else if (channels==2){ChannelsOne("2.gif");}
 		else if (channels==3){ChannelsThree("3.gif");}}
-
-}
 	
+}
+	//document.getElementById("channels").innerHTML = channels;
+
+
 
 	document.onkeypress;
 
 
 </script>
 
-<div id="changepic">
-<img src="4.gif" id="changepic" style="width:820px">
+
 </div>
 
 </body>
-</html>
 
 </html>
