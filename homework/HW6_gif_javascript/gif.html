@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>
+	</title>
+	<style>
+	img{width:900px;
+		position:absolute;}
+</style>
+</head>
+
+<body>
+
+<script>
+
+
+
+function tv(){
+	//state
+	if(Index==0){"1.gif";}
+	else if (Index ==1){"2.gif";}
+	else if (Index ==2){"3.gif";}
+	else if (Index ==3){"4.gif";}
+}
+	//interaction
+	function krePressed(){
+		console.log(Index);
+		if (keyCode !=LEFT && keyCode !=RIGHT){myString+=key;}
+
+
+		if(keyCode ==RIGHT){
+
+		if(Index==0){sceneIndex=1;
+	}
+	else if (Index ==1){sceneIndex=2;}
+	else if (Index ==2){sceneIndex=3;}
+	else if (Index ==3){sceneIndex=4;}}
+	}
+
+		if(keyCode ==LEFT){
+
+		if(sceneIndex==0){sceneIndex=3;
+	}
+	else if (Index ==1){sceneIndex=0;}
+	else if (Index ==2){sceneIndex=1;}
+	else if (ndex ==3){sceneIndex=2;}}
+
+
+		document.onkeypress=tv;
+		
+	
+</script>
+
+	<img id="tv" alt="tv" src="1.gif">
+
+</body>
+
+
+
+</html>

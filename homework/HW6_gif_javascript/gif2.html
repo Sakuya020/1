@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>
+		
+	</title>
+	<style>
+		div{position:absolute;}
+	</style>
+</head>
+<body>
+
+
+<script>
+
+var channels = ["1.gif", "2.gif", "3.gif", "4.gif"];
+	console.log(channels);
+
+function draw () 
+
+{
+	if(channels==3){ChannelsThree("4.gif")};
+	if(channels==2){ChannelsTwo("3.gif")};
+	if(channels==1){ChannelsOne("2.gif")};
+	if(channels==0){ChannelsZero("1.gif")};
+}
+
+
+function keyPressed() 
+
+{
+	var img=document.getElementById("changepic");
+ 
+	if(keyCode==UP){
+		if (channels==0){ChannelsOnw("2.gif");}
+		else if (channels==1){ChannelsTwo("3.gif");}
+		else if (channels==2){ChannelsThree("4.gif");}
+		else if (channels==3){ChannelsZero("1.gif");}}
+
+	if(keyCode==DOWN){
+		if (channels==0){ChannelsThree("4.gif");}
+		else if (channels==1){ChannelsZero("1.gif");}
+		else if (channels==2){ChannelsOne("2.gif");}
+		else if (channels==3){ChannelsThree("3.gif");}}
+
+}
+	
+
+	document.onkeypress;
+
+
+</script>
+
+<div id="changepic">
+<img src="4.gif" id="changepic" style="width:820px">
+</div>
+
+</body>
+</html>
+
+</html>
