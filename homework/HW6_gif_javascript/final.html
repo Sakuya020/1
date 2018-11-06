@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>
+		
+	</title>
+	<style>
+	html{background-color: black;}
+	img{height:100vmin;
+		display:flex;}
+	</style>
+</head>
+<body>
+
+<img id="pic"></img>
+
+<script>
+
+
+
+var channels = ["1.gif", "2.gif", "3.gif", "4.gif"];
+document.getElementById("pic").src=channels[0];
+
+var indexChannel=0
+function keyPressed(e) {
+	var keyCode = e.keyCode;
+	console.log(keyCode);
+	if(keyCode==38){
+		if(indexChannel<3){
+			indexChannel++;
+		}else{
+			indexChannel=0;
+		}
+	}
+	if(keyCode==40){
+		if(indexChannel>0){
+			indexChannel--;
+		}else{
+			indexChannel=3;
+		}
+	}
+console.log("indexChannel:"+indexChannel);
+document.getElementById("pic").src=channels[indexChannel];
+	
+}
+
+document.onkeydown=keyPressed;
+
+
+</script>
+
+</body>
+</html>

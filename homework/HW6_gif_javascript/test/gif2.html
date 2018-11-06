@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>
+		
+	</title>
+	<style>
+	img{display:flex;
+	justify-content:center;
+	align-items:center;
+	height:100%;
+	width:100%;}
+	</style>
+</head>
+
+<body>
+
+<img id="pic"></img>
+
+<script>
+
+document.getElementById("pic").src="4.gif";
+
+console.log(pic);
+
+
+var channels = ["1.gif", "2.gif", "3.gif", "4.gif"];
+document.getElementById("pic").src=channels[0];
+
+function keyPressed(e) {
+
+	if(keyCode==38){
+		if (channels==0){ChannelsOne("2.gif");}
+		else if (channels==1){ChannelsTwo("3.gif");}
+		else if (channels==2){ChannelsThree("4.gif");}
+		else if (channels==3){ChannelsZero("1.gif");}}
+
+	if(keyCode==40){console.log("hi");
+		if (channels==0){ChannelsThree("4.gif");}
+		else if (channels==1){ChannelsZero("1.gif");}
+		else if (channels==2){ChannelsOne("2.gif");}
+		else if (channels==3){ChannelsThree("3.gif");}}
+	
+}
+console.log(keyPressed);
+
+	document.onkeypress=keyPressed;
+
+
+</script>
+
+</body>
+</html>
