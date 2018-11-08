@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+	<title>
+	</title>
+	<style>
+html,body{
+	display:flex;
+	justify-content:center;
+	align-items:center;
+	height:100%;
+}
+
+h1{font-size:20vmin;}
+	</style>
+
+
+</head>
+
+
+<body>
+	Man is least himself when he talks in his own person. Give him a <h1 id="spot">mask</h1> and he will tell you the truth.
+
+</body>
+
+
+<script>
+	// *java script goes here*
+	var choices = ["heads", "tails"];
+	var number0_2 = Math.random()*2;
+
+	console.log(number0_2);
+
+	var integer=parseInt(number0_2);
+	console.log(integer);
+
+	console.log(choices[integer]);
+
+	document.getElementById("coin").innerHTML = choices[integer];
+	
+
+
+	</script>
+
+
+</html>

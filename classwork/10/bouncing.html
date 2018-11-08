@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+	body{margin:0;}
+	div{position: absolute;
+		font-size:50px;}
+</style>
+
+<title></title>
+
+<!-- command+slash to comment in html -->
+</head>
+
+<body>
+
+<div id="ball">さくや</div>
+
+</body>
+
+
+<script>
+	var bounds=document.getElementById("ball").getBoundingClientRect();
+	var x=0;
+	var y=0;
+	var speed=5;
+	var xChange=speed;
+	var yChange=speed;
+	var width=bounds.width;
+	var height=bounds.height;
+
+	console.log(document.getElementById("ball").getBoundingClientRect());
+
+	function gameLoop(){
+	x=x+xChange;
+	y=y+yChange;
+	document.getElementById("ball").style.top=y+"px";
+	document.getElementById("ball").style.left=x+"px";
+
+	if(x>window.innerWidth -width){
+		xChange=-speed * Math.random();}
+	if(x<0){
+		xChange=speed * Math.random();}
+	if(y>window.innerHeight -height){
+		yChange=-speed * Math.random();}
+	if(y<0){
+		yChange=speed * Math.random();}
+
+	}
+
+	//here is how you run a function
+	//gameLoop();
+
+	//here is how you run a function on a loop infinite times
+	//function name+time(millisec)
+	setInterval(gameLoop, 1000/60);
+
+</script>
+
+
+</html>

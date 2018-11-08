@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+	<title>
+	</title>
+	<style>
+html,body{
+	display:flex;
+	justify-content:center;
+	align-items:center;
+	height:100%;
+}
+
+h1{font-size:20vmin;}
+	</style>
+
+
+</head>
+
+
+<body>
+	<h1 id="coin"></h1>
+
+</body>
+
+
+<script>
+	// *java script goes here*
+	var randomnumber = Math.random();
+	if(randomnumber>0.5){
+		document.getElementById("coin").innerHTML = "heads";
+	}
+
+	if(randomnumber<0.5){document.getElementById("coin").innerHTML = "tails";
+
+	}
+
+
+
+	</script>
+
+
+</html>

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+
+
+<head>
+	<title></title>
+
+
+	<style>
+
+	html {background-color:black;}
+
+	#sun{width:15vmin;
+		height:15vmin;
+		background-color:#FFA;
+		border-radius:7.5vmin;
+		position: absolute;
+		top:50%;
+		left:50%;
+		margin-left:-7.5vmin;}
+
+	#earth{
+		width:8vmin;
+		height:8vmin;
+		background-color:grey;
+		border-radius:4vmin;
+		position:relative;
+		top:6vmin;
+		left:6vmin;
+		margin-left:-30vmin;
+		transform-origin:30vmin;
+		animation: orbit 15s linear infinite;
+	}
+
+	#moon{
+		width:4vmin;
+		height:4vmin;
+		background-color:white;
+		border-radius:2vmin;
+		position:relative;
+		top:2vmin;
+		left:2vmin;
+/*		margin-top:-2vmin;*/
+		animation: orbit 3s linear infinite;
+		margin-left:-8vmin;
+		transform-origin:10vmin;
+	}
+
+@keyframes orbit {
+	100%{transform:rotateZ(360deg);}
+}
+
+</style>
+</head>
+
+
+<body>
+	<div id="sun">
+		<div id="earth">
+			<div id="moon">
+	</div>
+</div>
+</div>
+
+</body>
+
+
+</html>
