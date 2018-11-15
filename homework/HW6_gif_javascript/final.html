@@ -21,10 +21,12 @@
 var channels = ["1.gif", "2.gif", "3.gif", "4.gif"];
 document.getElementById("pic").src=channels[0];
 
+//= is not a mathematical = sign, but put XXX into XXX
 var indexChannel=0
 function keyPressed(e) {
 	var keyCode = e.keyCode;
 	console.log(keyCode);
+//<= less then or equal to, != not equal to 
 	if(keyCode==38){
 		if(indexChannel<3){
 			indexChannel++;
