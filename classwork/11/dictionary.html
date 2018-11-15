@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<input type="file" id="open-file">
+
+<script>
+
+// lead a file
+
+var reader = new FileReader ();
+document.getElementById("open-file").onchange = function(){
+	reader.readAsText(this.files[0]);
+}
+
+reader.onload=function(event){
+	buildDictionary(event.target.result);
+
+}
+
+// not the file has been loaded
+
+function buildDictionary (text){
+	//console.log(text);
+	var words = text.split(/\s+/);
+	console.log(words);
+	// loop over every word, but in the dictionary
+
+	var dictionary = {};
+
+	var i = 0;
+	while (i < words.length){
+		var thisword = words[i];
+		var firstletter = thisword[0];
+		// if this letter is here for the first time, create an empty array
+		if (dictionary[firstletter]== undefined){
+			dictionary[firstletter]=[];
+		}
+		// add the word into the dictionary according to its firstletter (the KEY)
+		dictionary[firstletter].push(thisword); // e.g. colourArray.push("purple"); adds "purple" to the array
+
+		i = i + 1;
+	}
+
+	console.log(dictionary);
+
+}
+
+</script>
+
+</body>
+</html>
